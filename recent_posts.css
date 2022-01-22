@@ -1,0 +1,98 @@
+* {
+	background-color: lightgray;
+}
+
+
+@media(max-width: 600px) {
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 250px 400px 600px 100px;
+		grid-template-areas:
+		"hd hd hd hd hd hd hd hd"
+		"feat feat main main main main main main"
+		"ft ft ft ft ft ft ft ft";
+		border: 2px solid black;
+		}
+}
+
+
+@media(min-width: 601px) and (max-width: 900px) {
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 250px 400px 600px 100px;
+		grid-template-areas:
+		"hd hd hd hd hd hd hd hd"
+		"feat feat feat main main main main main"
+		"ft ft ft ft ft ft ft ft";
+		border: 2px solid black;
+		}
+}
+
+
+@media(min-width: 901px) {
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 250px 400px 600px 100px;
+		grid-template-areas:
+		"hd hd hd hd hd hd hd hd"
+		"feat feat feat feat feat feat feat feat"
+		"main main main main main main main main"
+		"ft ft ft ft ft ft ft ft";
+		border: 2px solid black;
+		}
+}
+
+
+.header{
+    grid-area: hd;
+     border: 1px solid red;
+  }
+  
+  
+.feature{
+    grid-area: feat;
+     border: 1px solid red;
+  }
+  
+  
+.content_box{
+    grid-area: main;
+     border: 1px solid red;
+  }
+  
+  
+.footer{
+    grid-area: ft;  
+     border: 1px solid red;
+  }
+
+
+.nav {
+	display: flex;
+	font-family: Arial, sans-serif;
+	justify-content: right;
+}
+
+
+.menu {
+	justify-content: right;
+	list-style-type: none;
+	color: rgb(220, 0, 0);
+	display: flex;
+}
+
+
+.hook {
+	color: rgb(225, 0, 0);
+}
+
+
+.components {
+	font-family: 'Times New Roman', Times, serif;
+	display: grid;
+	border: 1px solid black;
+	
+}
